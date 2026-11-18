@@ -189,6 +189,7 @@ o.append(container_stack(1720, QR, 3, 2))
 o.append(B.cargo_ship(1265, 925, 0.9))
 o.append(f'<g transform="translate(2560,0) scale(-1,1)">{B.cargo_ship(780, 1290, 0.62)}</g>')  # smaller ship heading west (TV area)
 
+bg_layers = list(o)  # background only (used by the 'Subscribe' banner)
 # Marlow on the left quay, presenting the title (face inside the safe area)
 o.append(f'<ellipse cx="650" cy="{QL+4}" rx="80" ry="12" fill="#000" opacity="0.18"/>')
 o.append(gen.place(gen.figure(M, pose="presenting"), 650, QL, 1.45))
@@ -210,3 +211,14 @@ os.makedirs(os.path.join(HERE, "src"), exist_ok=True)
 open(os.path.join(HERE, "src", "banner-skyline-2560x1440.svg"), "w").write(svg)
 open(os.path.join(HERE, "src", "banner-skyline-safe-area-guide.svg"), "w").write(guide)
 print("built skyline")
+
+# ---------------------------------------------------------------- Banner v3: background + "Subscribe"
+sub = bg_layers + [
+    f'<text x="1280" y="768" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="212" letter-spacing="2" '
+    f'fill="{NAVY}" stroke="{WHITE}" stroke-width="24" stroke-linejoin="round" paint-order="stroke">Subscribe</text>',
+    "</svg>"]
+sub_svg = "".join(sub)
+open(os.path.join(HERE, "src", "banner-subscribe-2560x1440.svg"), "w").write(sub_svg)
+open(os.path.join(HERE, "src", "banner-subscribe-safe-area-guide.svg"), "w").write(sub_svg.replace("</svg>",
+    '<rect x="507" y="508" width="1546" height="423" fill="none" stroke="#FF00AA" stroke-width="4" stroke-dasharray="20 10"/></svg>'))
+print("built subscribe")
