@@ -4,7 +4,8 @@
 | File | Size | Use |
 |---|---|---|
 | `banner-2560x1440.png` / `.jpg` | 2560 × 1440 | YouTube banner. Upload the JPG (615 KB) or the PNG (4.97 MB); both are under YouTube's 6 MB limit. |
-| `profile-1024x1024.png` / `.jpg` | 1024 × 1024 | YouTube profile picture. YouTube crops it to a circle. |
+| `profile-1024x1024.png` / `.jpg` | 1024 × 1024 | **Main** YouTube profile picture: Marlow close-up on a clean white background (YouTube crops it to a circle). Stands out on dark-mode YouTube. |
+| `profile-1024x1024-navy.png` / `.jpg` | 1024 × 1024 | Alternative: navy background with the teal globe, matching the banner. |
 | `banner-safe-area-guide.png` | 2560 × 1440 | **Checking only, don't upload.** Pink = 1546 × 423 safe area for all devices, yellow = desktop maximum, cyan = full-width tablet/desktop strip. |
 
 All the text (channel name, tagline, red accent bar) sits inside the 1546 × 423 safe area: x 1100–2040 and y 560–833 against limits of 507–2053 and 508–931. Marlow's face is also inside it, so mobile users see the character and the name.

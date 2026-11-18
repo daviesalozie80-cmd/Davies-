@@ -156,9 +156,17 @@ p = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="10
      f'<circle cx="232" cy="560" r="11" fill="{CREAM}" fill-opacity="0.7"/><circle cx="800" cy="520" r="11" fill="{CREAM}" fill-opacity="0.7"/>',
      gen.place(gen.figure(M, "front", "confident"), 512, 460 + 238 * 4.15, 4.15),
      "</svg>"]
-profile = "".join(p)
+profile_navy = "".join(p)
+
+# Main profile picture: clean white background, close head-and-shoulders crop (hair swoop kept inside the circle).
+PS = 5.0
+profile = "".join([
+    f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">',
+    f'<rect width="1024" height="1024" fill="{WHITE}"/>',
+    gen.place(gen.figure(M, "front", "confident"), 512, 565 + 238 * PS, PS),
+    "</svg>"])
 
 out = os.path.join(HERE, "src"); os.makedirs(out, exist_ok=True)
-for name, svg in (("banner-2560x1440", banner), ("banner-safe-area-guide", guide), ("profile-1024x1024", profile)):
+for name, svg in (("banner-2560x1440", banner), ("banner-safe-area-guide", guide), ("profile-1024x1024", profile), ("profile-1024x1024-navy", profile_navy)):
     open(os.path.join(out, name + ".svg"), "w").write(svg)
 print("built")
