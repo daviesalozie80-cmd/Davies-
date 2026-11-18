@@ -6,7 +6,7 @@
 | `banner-2560x1440.png` / `.jpg` | 2560 × 1440 | YouTube banner. Upload the JPG (615 KB) or the PNG (4.97 MB); both are under YouTube's 6 MB limit. |
 | `profile-1024x1024.png` / `.jpg` | 1024 × 1024 | **Main** YouTube profile picture: Marlow close-up on a clean white background (YouTube crops it to a circle). Stands out on dark-mode YouTube. |
 | `profile-1024x1024-navy.png` / `.jpg` | 1024 × 1024 | Alternative: navy background with the teal globe, matching the banner. |
-| `banner-black-subscribe-2560x1440.png` | 2560 × 1440 | **Banner v4 (current choice):** plain black background with "Subscribe" in white, centred in the safe area. 92 KB. Rebuild with `python3 build_black.py`. |
+| `banner-black-subscribe-2560x1440.png` | 2560 × 1440 | **Banner v4 (current choice):** plain black background with a white handwritten "Subscribe" (Kalam font, SIL OFL), centred in the safe area. Rebuild with `python3 build_black.py`. |
 | `banner-subscribe-2560x1440.png` / `.jpg` | 2560 × 1440 | **Banner v3:** the world-skyline background with a single large "Subscribe". 400 KB. `banner-subscribe-safe-area-guide.png` is for checking only. |
 | `banner-skyline-2560x1440.png` / `.jpg` | 2560 × 1440 | **Banner v2, "world skyline" (recommended).** Light sky, landmarks of world financial and trade hubs framing the title, a container harbour, and Marlow on the quay. 459 KB. |
 | `banner-skyline-safe-area-guide.png` | 2560 × 1440 | Check only: v2 with the safe-area boxes drawn on. |
