@@ -6,6 +6,8 @@
 | `banner-2560x1440.png` / `.jpg` | 2560 × 1440 | YouTube banner. Upload the JPG (615 KB) or the PNG (4.97 MB); both are under YouTube's 6 MB limit. |
 | `profile-1024x1024.png` / `.jpg` | 1024 × 1024 | **Main** YouTube profile picture: Marlow close-up on a clean white background (YouTube crops it to a circle). Stands out on dark-mode YouTube. |
 | `profile-1024x1024-navy.png` / `.jpg` | 1024 × 1024 | Alternative: navy background with the teal globe, matching the banner. |
+| `banner-skyline-2560x1440.png` / `.jpg` | 2560 × 1440 | **Banner v2, "world skyline" (recommended).** Light sky, landmarks of world financial and trade hubs framing the title, a container harbour, and Marlow on the quay. 459 KB. |
+| `banner-skyline-safe-area-guide.png` | 2560 × 1440 | Check only: v2 with the safe-area boxes drawn on. |
 | `banner-safe-area-guide.png` | 2560 × 1440 | **Checking only, don't upload.** Pink = 1546 × 423 safe area for all devices, yellow = desktop maximum, cyan = full-width tablet/desktop strip. |
 
 All the text (channel name, tagline, red accent bar) sits inside the 1546 × 423 safe area: x 1100–2040 and y 560–833 against limits of 507–2053 and 508–931. Marlow's face is also inside it, so mobile users see the character and the name.
@@ -43,7 +45,8 @@ All the text (channel name, tagline, red accent bar) sits inside the 1546 × 423
 ## Rebuilding or editing
 ```
 cd brand
-python3 build.py                      # writes src/*.svg
+python3 build.py                      # writes src/*.svg (banner v1 + profiles)
+python3 build_skyline.py              # writes src/banner-skyline-*.svg (banner v2)
 node assets/render.js src/banner-2560x1440.svg final/banner-2560x1440.png 2560 1440 1
 node assets/render.js src/profile-1024x1024.svg final/profile-1024x1024.png 1024 1024 1
 ```
