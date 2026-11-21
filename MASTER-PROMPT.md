@@ -27,7 +27,7 @@ EDITING FORMAT (permanent)
 ==================================================
 Every long-form video is an illustrated map documentary with a recurring cast, in ONE flat art style. Every 10-second clip is one of four types. Target mix per video:
 
-- MAP/DATA (about 40%): illustrated maps, flows, trade routes, charts and big numbers. Built in the editor, with optional AI-generated base art that contains no text. Use for geography, comparisons, statistics, "where" and "how much".
+- MAP/DATA (about 40%): illustrated maps, flows, trade routes, charts and big numbers, in the same illustrated style. They are AI-generated as text-free illustrated scenes (full-screen maps, top-down map tables, chart boards, infographic objects), then given numbers and labels in the editor. Use for geography, comparisons, statistics, "where" and "how much".
 - CHARACTER (about 35%): the recurring cast acting out decisions, human stakes and reactions. AI-generated video clips. Use for "who decides", "who pays", reactions and the "aha" explanation moments.
 - METAPHOR (about 25%): objects acting out mechanisms (a debt conveyor belt, a half-closed valve, a see-saw of currencies, money boats sailing home, a fuse, a bathtub). AI-generated video clips; a cast member may appear. Use for "how it works".
 - PROOF (3–6 moments per long video; 0–1 per Short): a real document, headline, official chart or photo, briefly shown and framed inside an illustrated element (for example pinned to an illustrated corkboard, held by Dr. Vera Lind, or on Marlow's desk), always with an on-screen source credit. Use only official or public-domain material, or material I can legally use with commentary. Never invent or fake documents. Never use AI-generated "real" photos.
@@ -53,9 +53,10 @@ CHARACTERS: bean-body stickman construction.
 - A soft flat ground-shadow ellipse under the figure.
 
 ENVIRONMENTS AND PROPS:
-- Flat illustrated scenery with simplified recognisable landmarks, medium detail, flat two-tone shading and the same charcoal outlines.
+- Detailed, professionally illustrated 2D scenery that is specific to the narration (see the OFFICIAL VISUAL STYLE GUIDE), with relevant furniture, equipment and architecture.
+- Flat colours with subtle two-tone shading, and the same charcoal outlines.
 - Muted adult palette.
-- Backgrounds always have lower contrast and less detail than the characters.
+- Backgrounds stay lower in contrast than the characters, so the cast always reads first.
 
 ANIMATION:
 - Limited 2D puppet animation: rotations of the line limbs, small body bounces, head tilts, and swapped facial expressions (brows, eyes, mouth only).
@@ -84,6 +85,75 @@ AI VIDEO CLIPS ARE SILENT AND TEXT-FREE:
 
 NEVER drift into:
 3D, CGI, Pixar/Disney style, anime, chibi, photorealism, realistic faces, noses, fingers, hands, feet, shoes, gradients, glossy highlights, paper/cardboard cut-out edges, whiteboard animation, neon colours, childish nursery styling, oval or egg-shaped heads, long necks, extra limbs, or real-person likenesses.
+
+==================================================
+OFFICIAL VISUAL STYLE GUIDE (applies to EVERY clip, including maps)
+==================================================
+Goal: a professional 2D illustrated documentary-explainer animation. The finished video must feel like ONE coherent illustrated documentary universe, not a collection of unrelated AI-generated images.
+
+1. CHARACTER CONSISTENCY
+- The uploaded character reference sheet is the definitive design reference.
+- All characters share the same skeleton, head-to-body proportions, body structure, outline thickness, facial simplicity and shading approach.
+- Never redesign, replace, exaggerate or randomly modify the established cast.
+
+Quick identity check (must match the reference sheet):
+
+| Character | Identity |
+|---|---|
+| Marlow | Guide/narrator. Deep navy overcoat, mustard-amber scarf with one tail hanging on the left of his chest, a brown swooping hair tuft curling to his right, a small red map-pin badge. |
+| Rosa | Everyday citizen. Medium-brown skin, a high round hair bun, a teal hoodie. |
+| Dr. Vera Lind | Expert. Grey cardigan, silver-grey bob, round glasses, teal lanyard with an ID badge. |
+| The Minister | Leader. Charcoal suit, red tie by default (the colour can change to the country's), side-parted hair, a lapel flag pin. |
+| Mr. Ledger | Creditor. Black suit, gold tie, moustache, bald head with a shine mark. |
+| Dev | Worker. Orange high-visibility vest with silver stripes, yellow hard hat. |
+| The Commons | Anonymous, faceless grey figures. |
+
+2. ENVIRONMENTS
+- Every scene uses a DETAILED, professionally illustrated 2D environment that visibly communicates the subject of the narration. Include relevant furniture, equipment, architecture, objects and environmental details.
+- NEVER use empty, plain or repetitive backgrounds.
+- Choose from (and extend beyond) these:
+  - government offices and parliament chambers
+  - central banks and trading floors
+  - corporate boardrooms and executive offices
+  - international shipping ports with cranes and containers
+  - factories and assembly lines
+  - oil fields, refineries, mines and energy facilities
+  - financial districts and city skylines
+  - warehouses, airports and customs halls
+  - research laboratories and technology centres
+  - farms, markets, homes and streets of the country in the story
+- Keep environments detailed but uncluttered, with clear foreground, midground and background layers. The characters remain the cleanest, highest-contrast shapes in the frame.
+
+3. LIGHTING AND COLOUR
+- Use controlled illustrated lighting suited to each environment: natural daylight, soft interior lighting, warm industrial lighting, or subtle evening illumination.
+- Express it through flat colour areas and subtle two-tone shading on the environment only. The characters stay flat, with their single crescent shade.
+- Use a coordinated professional palette: navy, dark teal, cream, grey, muted brown, restrained red and yellow/amber (exact values in the palette table in the LOCKED VISUAL STYLE section).
+- Avoid excessive saturation, artificial glow, dramatic 3D lighting, lens flares and unnecessary visual effects.
+
+4. CAMERA AND COMPOSITION
+Vary documentary-style framing across every sequence:
+- wide establishing shots
+- medium character shots
+- close-ups of important objects
+- over-the-shoulder compositions
+- top-down document and map shots
+- full-screen maps, charts and infographics
+- carefully composed group scenes
+
+Each composition must support the narration line it accompanies. Never use the same framing in more than two consecutive clips.
+
+5. VISUAL STORYTELLING
+- Never illustrate narration with the same character standing and talking.
+- Translate the MEANING of each sentence into a specific scene: characters acting, environments, maps, documents, money, machinery, graphs, shipping containers, natural resources and other relevant objects.
+- Every scene must communicate one specific idea. If a clip's idea can't be stated in one sentence, redesign it.
+
+6. TECHNICAL REQUIREMENTS
+- 2D illustrated animation with a professional documentary-explainer look.
+- Clean, bold, consistent outlines. Flat colours with subtle shading.
+- Consistent character anatomy.
+- Detailed but uncluttered environments.
+- 16:9 aspect ratio (vertical 9:16 only when I choose a Short).
+- No photorealistic characters, no 3D character rendering, no random changes to the cast.
 
 ==================================================
 LOCKED CAST: MASTER DESCRIPTIONS (copy the full description into every prompt where a character appears)
@@ -183,7 +253,7 @@ MAP AND DATA SCENE SPEC (for MAP/DATA clips)
   - Montserrat ExtraBold for numbers and headlines, at most 6 words.
   - Inter for labels and sources.
   - Every number shows a source line ("Source: IMF WEO, Oct 2026").
-- If I want AI base art for a map scene, write a separate image prompt with NO text, numbers or labels.
+- Every MAP/DATA clip gets a full AI generation prompt for the illustrated map scene (with NO text, numbers or labels), plus an EDITOR OVERLAY CARD for the on-screen text.
 
 ==================================================
 RESEARCH AND ACCURACY RULES (permanent)
@@ -394,22 +464,30 @@ Explain the continuity method once:
 
 Then write every clip in order, numbered "Clip X of N", with the overall timeline (for example 00:10–00:20), its TYPE and its script section shown OUTSIDE the prompt.
 
-For CHARACTER and METAPHOR clips, write one separately copyable generation prompt that contains:
-- An exact 10-second duration and the selected aspect ratio.
-- An explicit, concrete restatement of the LOCKED VISUAL STYLE (flat 2D vector, bean-body stickman construction, flat environments, the exclusions). Never write "same style as before".
+Before the clips, give a VISUAL TRANSLATION TABLE with one row per clip:
+- the narration idea in one sentence
+- the clip type
+- the specific scene that shows that idea
+- the environment
+- the framing (wide, medium, close-up, over-the-shoulder, top-down or full-screen map)
+
+Check it against the OFFICIAL VISUAL STYLE GUIDE:
+- no "character standing and talking" scenes
+- no empty backgrounds
+- no framing used in more than two consecutive clips
+- the 40/35/25 mix and the proof moments are in place
+
+For CHARACTER, METAPHOR and MAP/DATA clips, write one separately copyable generation prompt that contains:
+- An exact 10-second duration and the selected aspect ratio (16:9 unless this is a Short).
+- An explicit, concrete restatement of the LOCKED VISUAL STYLE and the OFFICIAL VISUAL STYLE GUIDE: 2D illustrated documentary-explainer look, bean-body stickman cast matching the reference sheet, detailed topic-specific illustrated environment, controlled illustrated lighting, the coordinated palette, and the exclusions. Never write "same style as before".
 - The full master description of every character visible in the clip.
-- The current environment, lighting, props and their current states.
+- The current environment, described in detail (architecture, furniture, equipment, objects relevant to the narration), with its lighting type, the props and their current states.
+- For MAP/DATA clips: the illustrated map, chart or infographic scene described in full (region, highlighted country colour, routes, symbols, any cast member present), with NO text, numbers or labels in the generated image. Follow it with an EDITOR OVERLAY CARD giving the exact on-screen text (at most 6 words plus the number), its source line, and when each item appears.
 - The opening composition and action.
 - Two to four timed beats totalling exactly 10 seconds, each with action, expression, framing and camera move or cut. Keep actions feasible: no cramming.
 - A precise final-frame description for the next reference image.
 - Silent output: no dialogue, lip-sync, narration, music, sound effects, captions, speech bubbles, logos or text.
 - If the clip is not the first in its scene, the prompt begins: "Use the attached final-frame screenshot from the previous clip as the starting image. Match its composition and continue the existing action before making the next cut."
-
-For MAP/DATA clips, write an EDITOR BUILD CARD:
-- the base visual (map region or chart type, colours from the palette)
-- a second-by-second build (layers, arrows, highlights, counting numbers, camera move)
-- the exact on-screen text: at most 6 words plus the number, with its source line
-- an optional separate AI base-image prompt with NO text
 
 For PROOF clips, write a PROOF CARD:
 - exactly which document, headline, chart or photo to show
